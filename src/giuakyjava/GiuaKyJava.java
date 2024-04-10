@@ -108,6 +108,10 @@ class CarManager {
 
     // Update
     // You can add update methods as needed
+    public void updateAllCars()
+    {
+    
+    }
 
     // Delete
     public void removeCar(ICar vehicle) {
@@ -211,5 +215,6 @@ public class GiuaKyJava {
         System.out.println("\nThông tin sau khi đọc từ file:");
         newManager.displayAllCars();
     }
+    //ss
 }
 
