@@ -170,22 +170,22 @@ class CarManager {
         }
     }
 }
-    // Lớp chính
+    // lop chinhs
 public class GiuaKyJava {
     public static void main(String[] args) {
-        // Tạo đối tượng quản lý xe
+        // dtuong quan li xe
         CarManager manager = new CarManager();
 
-        // Thêm một số phương tiện
+        // add
         manager.addCar(new Car("1", "Toyota", 2020, 25000.00, "Đỏ", 5, "Xăng"));
         manager.addCar(new Motorcycle("2", "Honda", 2018, 8000.00, "Đen", 250.0));
         manager.addCar(new Truck("3", "Ford", 2015, 40000.00, "Xanh", 5000.0));
 
-        // Hiển thị thông tin tất cả các xe
+        // print
         System.out.println("Thông tin tất cả các xe:");
         manager.displayAllCars();
 
-        // Xóa một phương tiện
+        // delete
         System.out.println("\nXóa phương tiện có ID: 1");
         for (ICar vehicle : manager.vehicles) {
             if (vehicle instanceof Vehicle && ((Vehicle) vehicle).ID.equals("1")) {
@@ -210,8 +210,7 @@ public class GiuaKyJava {
         // Đọc từ file
         CarManager newManager = new CarManager();
         newManager.readFromFile("xe.txt");
-        
-        // Hiển thị thông tin sau khi đọc từ file
+
         System.out.println("\nThông tin sau khi đọc từ file:");
         newManager.displayAllCars();
     }
